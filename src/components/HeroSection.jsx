@@ -2,43 +2,52 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-50 px-8 py-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        {/* Left Content */}
-        <div className="space-y-8 pt-8">
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Stay Informed, Stay Inspired
-          </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-            Discover a World of Knowledge at Your Fingertips. Your Daily Dose of Inspiration and Information.
-          </p>
-        </div>
-        
-        {/* Right Content - Author Info */}
-        <div className="flex flex-col items-end space-y-8">
-          {/* Author Image */}
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face" 
-              alt="Thompson P." 
-              className="w-80 h-96 object-cover rounded-2xl shadow-xl"
-            />
+    <section className="bg-gray-100 px-8 py-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          {/* Left Content - Title */}
+          <div className="lg:col-span-1 space-y-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              Stay Informed,<br />
+              Stay Inspired
+            </h1>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Discover a World of Knowledge at Your Fingertips. Your Daily Dose of Inspiration and Information.
+            </p>
           </div>
           
-          {/* Author Info */}
-          <div className="max-w-md text-right">
-            <div className="text-sm text-gray-400 uppercase tracking-wider mb-3 font-medium">
-              author
+          {/* Center Content - Hero Image */}
+          <div className="lg:col-span-1 flex justify-center">
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" 
+                alt="Thompson P." 
+                className="w-72 h-80 object-cover rounded-3xl shadow-2xl"
+              />
+              {/* Optional: Add a subtle background shape */}
+              <div className="absolute -top-4 -right-4 w-72 h-80 bg-yellow-200 rounded-3xl -z-10 opacity-30"></div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Thompson P.
-            </h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              I am a pet enthusiast and freelance writer who specializes in animal behavior and care. With a deep love for cats, I enjoy sharing insights on feline companionship and wellness.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              When I'm not writing, I spends time volunteering at my local animal shelter, helping cats find loving homes.
-            </p>
+          </div>
+          
+          {/* Right Content - Author Info */}
+          <div className="lg:col-span-1 space-y-6">
+            <div>
+              <div className="text-sm text-gray-400 uppercase tracking-wider mb-2 font-medium">
+                Author
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Thompson P.
+              </h3>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-gray-600 leading-relaxed text-sm">
+                I am a pet enthusiast and freelance writer who specializes in animal behavior and care. With a deep love for cats, I enjoy sharing insights on feline companionship and wellness.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                When I'm not writing, I spends time volunteering at my local animal shelter, helping cats find loving homes.
+              </p>
+            </div>
           </div>
         </div>
       </div>
